@@ -51,4 +51,3 @@ jobs:
             ${{env.LASTEST_TAG}}
           build-args: |
             ${{steps.version_step.outputs.version}}
-          run: docker push ${{ env.IMAGE }}:${{ env.GIT_SHA }}
